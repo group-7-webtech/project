@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 007</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); 
+        *
+        {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        .navbar
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            color:white;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logo
+        {
+            margin-left: 3%;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo_navbar
+        {
+            display: flex;
+            margin-left: 2%;
+        }
+
+        .centernavbar
+        {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-right: 5%;
+            list-style: none;
+        }
+        .centerlinks
+        {
+            width:450px;
+            display:flex;
+            justify-content: space-between;
+            color:white;
+            list-style: none;
+        }
+        .centerlinks a
+        {
+            color:white;
+        }
+        .centerlinks a:hover
+        {
+            color:blue;
+        }
+        .bodytengah video
+		{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			object-fit:cover;
+            z-index: -5;
+            filter:brightness(40%);
+		}
+        .backdrop
+		{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+        .tajuktengah
+        {
+            position:relative;
+			z-index:10;
+        }
+        .tajuktengah h1
+		{
+			font-size:5em;
+			font-weight:300;
+			color:white;
+			line-height:1em;
+			text-transform:uppercase;
+            left: 250px;
+            top:220px;
+            position:relative;
+            font-family: 'Roboto', sans-serif;
+		}
+        .tajuktengah h2
+		{
+			font-size:3.8em;
+			font-weight:300;
+			color:white;
+			line-height:1em;
+			text-transform:uppercase;
+            left: 250px;
+            top:220px;
+            position:relative;
+            font-family: 'Roboto', sans-serif;
+		}
+        .git 
+        {
+            position: fixed;
+            bottom:0;
+            right:0;
+            width:230px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    
+        <nav class="navbar">
+            <div class="logo_navbar">
+                <a class="logo" href="#">
+                <img src="#" width="30" height="24">
+                </a>
+            </div>
+                <div class="centernavbar">
+                    <ul class="centerlinks">
+                        <li>
+                            <a href="#" class="aboutUs" >About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="aboutUs" role="button">Group Members</a>
+                        </li>
+                        <li>
+                            <a href="#" class="aboutUs" role="button">Our Projects</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="bodytengah">
+            <video src="vd/Stock footage.mp4" autoplay loop muted></video> 
+            <div id="overlay" class="backdrop"></div> 
+        </div>
+        <div class="tajuktengah">
+            <h1>GROUP</h1>
+            <h2>007</h2>
+        </div>
+
+
+        <div class="git">
+            <a href="https://github.com/group-7-webtech/project">
+                <img src="img/GitHub-Emblem.png" height="90px" width="170px" alt="GitHub-logo" >
+            </a>
+        </div>
+            
+
+        
+        
+
+  
+</body>
