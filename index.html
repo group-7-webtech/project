@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 007</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
@@ -83,13 +85,13 @@
         }
 
         .slide2 {
-            height: 50vh;
+            height: 32vh;
             box-sizing: border-box;
             background-color: #2E2E2E;
         }
 
         .slide3 {
-            height: 70vh;
+            height: 60vh;
             box-sizing: border-box;
             background-color: #1E2225;
         }
@@ -197,6 +199,76 @@
             /* background-color: #3e8e41; */
             color: blue;
         }
+
+        hr {
+            border: none;
+            background-color: #EB501A;
+            height: 3px;
+        }
+
+        .content {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .content h1 {
+            font-size: 35px;
+            font-weight: normal;
+        }
+
+        .content p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .content a {
+            color: #EB501A;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .jscsslogo {
+            font-size: 60px;
+            color: #EB501A;
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+
+        .members{
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 20%;
+            background-color: rgb(36, 36, 36);
+        }
+
+        .card a{
+            color: white;
+        }
+
+        .card a:hover{
+            text-decoration: none;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transform: scale(110%);
+        }
+
+        .container {
+            padding: 15px 16px;
+        }
     </style>
 </head>
 
@@ -234,7 +306,7 @@
                         <div class="dropdown-content">
                             <a href="#">Ahmad Irfan</a>
                             <a href="#">Faris Faisal</a>
-                            <a href="#">Greg Ericson</a>
+                            <a href="groupmember.html">Greg Ericson</a>
                             <a href="#">Zulhusni</a>
                         </div>
                     </div>
@@ -255,12 +327,59 @@
 
     <!-- language used -->
     <section class="slide2">
-        
+        <div class="content" align="center">
+            <h1>Languages used</h2>
+                <div class="content">
+                    <p>Languages used in this projects are HTML5/CSS, JavaScript and jQuery.<br>
+                        Project source code are available in <a
+                            href="https://github.com/group-7-webtech/project">Github</a>.</p>
+                    <br>
+                    <div class="jscsslogo">
+                        </i><i class="fa-brands fa-html5"></i><i class="fa-brands fa-js"></i>
+                    </div>
+
+                </div>
+        </div>
     </section>
 
+    <hr>
     <!-- team members -->
     <section class="slide3">
-
+        <div class="content" align="center">
+            <h1>Team Members</h1>
+            <div class="content members">
+                <div class="card">
+                    <img src="img/self_kemeja.jpg" height="250px" alt="Avatar">
+                    <div class="container">
+                        <h4><b>AHMAD IRFAN</b></h4>
+                        <p>A91EC0007</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="#" height="250px" alt="Avatar">
+                    <div class="container">
+                        <h4><b>FARIS FAISAL</b></h4>
+                        <p>{matric number here}</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="groupmember.html">
+                    <img src="img/Myphoto.JPG" height="250px" alt="Avatar">
+                    <div class="container">
+                        <h4><b>GREG ERICSON</b></h4>
+                        <p>{matric number here}</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="#" height="250px" alt="Avatar">
+                    <div class="container">
+                        <h4><b>ZULHUSNI</b></h4>
+                        <p>{matric number here}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="footer">
