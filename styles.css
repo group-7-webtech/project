@@ -44,6 +44,14 @@ body {
     list-style: none;
 }
 
+.four-items{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+}
+
 .centerlinks a {
     color: white;
     text-decoration: none;
