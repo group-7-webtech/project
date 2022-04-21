@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
@@ -108,98 +109,6 @@
             text-decoration: none;
         }
 
-        .navbar {
-            top: 0%;
-            position: fixed;
-            display: flex;
-            justify-content: space-between;
-            width: 100vw;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            color: white;
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .logo {
-            margin-left: 3%;
-            color: #ffffff;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .logo_navbar {
-            display: flex;
-            margin-left: 2%;
-        }
-
-        .centernavbar {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            margin-right: 5%;
-            list-style: none;
-        }
-
-        .centerlinks {
-            width: 450px;
-            display: flex;
-            justify-content: space-between;
-            color: white;
-            list-style: none;
-        }
-
-        .centerlinks a {
-            color: white;
-        }
-
-        .centerlinks a:hover {
-            color: blue;
-        }
-
-        .dropbtn {
-            color: white;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            /* background-color: #3e8e41; */
-            color: blue;
-        }
-
         hr {
             border: none;
             background-color: #EB501A;
@@ -239,7 +148,7 @@
             gap: 1%;
         }
 
-        .members{
+        .members {
             display: flex;
             justify-content: center;
             gap: 1%;
@@ -252,11 +161,11 @@
             background-color: rgb(36, 36, 36);
         }
 
-        .card a{
+        .card a {
             color: white;
         }
 
-        .card a:hover{
+        .card a:hover {
             text-decoration: none;
         }
 
@@ -349,34 +258,40 @@
             <h1>Team Members</h1>
             <div class="content members">
                 <div class="card">
-                    <img src="img/self_kemeja.jpg" height="250px" alt="Avatar">
-                    <div class="container">
-                        <h4><b>AHMAD IRFAN</b></h4>
-                        <p>A91EC0007</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/faris.jpg" height="250px" alt="Avatar">
-                    <div class="container">
-                        <h4><b>FARIS FAISAL</b></h4>
-                        <p>A19EC0095</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="groupmember.html">
-                    <img src="img/Myphoto.JPG" height="250px" alt="Avatar">
-                    <div class="container">
-                        <h4><b>GREG ERICSON</b></h4>
-                        <p>A19EC3021</p>
-                    </div>
+                    <a href="#">
+                        <img src="img/self_kemeja.jpg" height="250px" alt="Avatar">
+                        <div class="container">
+                            <h4><b>AHMAD IRFAN</b></h4>
+                            <p>A91EC0007</p>
+                        </div>
                     </a>
                 </div>
                 <div class="card">
-                    <img src="img/ewq.jpg" height="250px" alt="Avatar">
-                    <div class="container">
-                        <h4><b>ZULHUSNI</b></h4>
-                        <p>A19EC0108</p>
-                    </div>
+                    <a href="#">
+                        <img src="img/faris.jpg" height="250px" alt="Avatar">
+                        <div class="container">
+                            <h4><b>FARIS FAISAL</b></h4>
+                            <p>A19EC0095</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="greg.html">
+                        <img src="img/Myphoto.JPG" height="250px" alt="Avatar">
+                        <div class="container">
+                            <h4><b>GREG ERICSON</b></h4>
+                            <p>A19EC3021</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="husni.html">
+                        <img src="img/ewq.jpg" height="250px" alt="Avatar">
+                        <div class="container">
+                            <h4><b>ZULHUSNI</b></h4>
+                            <p>A19EC0108</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

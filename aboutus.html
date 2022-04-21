@@ -6,215 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-        *{
-            padding: 0;
-            margin: 0;
+        .about{
+            padding-top: 4%;
         }
 
-        body{
-            background-color: #1F2326;
-        }
-
-        .bodytengah video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -5;
-            filter: brightness(40%);
-        }
-
-        .backdrop {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .tajuktengah {
-            position: relative;
-            z-index: 10;
-        }
-
-        .tajuktengah h1 {
-            font-size: 100px;
-            font-weight: 300;
-            color: white;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            position: absolute;
-            left: 300px;
-            top: 300px;
-        }
-
-        .tajuktengah h2 {
-            font-size: 80px;
-            font-weight: 300;
-            color: white;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            position: absolute;
-            left: 300px;
-            top: 400px;
-        }
-
-        .tajuktengah h3 {
-            font-size: 40px;
-            font-weight: 300;
-            color: #ce4f30;
-            font-family: 'Montserrat', sans-serif;
-            position: absolute;
-            left: 300px;
-            top: 500px;
-        }
-
-        .slide {
-            height: 100vh;
-            box-sizing: border-box;
-        }
-
-        .slide2 {
-            height: 32vh;
-            box-sizing: border-box;
-            background-color: #2E2E2E;
-        }
-
-        .slide3 {
-            height: 60vh;
-            box-sizing: border-box;
-            background-color: #1E2225;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            padding-right: 2%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .navbar {
-            top: 0%;
-            position: fixed;
-            display: flex;
-            justify-content: space-between;
-            width: 100vw;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            color: white;
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .logo {
-            margin-left: 3%;
-            color: #ffffff;
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .logo_navbar {
-            display: flex;
-            margin-left: 2%;
-        }
-
-        .centernavbar {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            margin-right: 5%;
-            list-style: none;
-        }
-
-        .centerlinks {
-            width: 450px;
-            display: flex;
-            justify-content: space-between;
-            color: white;
-            list-style: none;
-        }
-
-        .centerlinks a {
-            color: white;
-        }
-
-        .centerlinks a:hover {
-            color: blue;
-        }
-
-        .dropbtn {
-            color: white;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            /* background-color: #3e8e41; */
-            color: blue;
-        }
-
-        .about1{
+        .about1 {
             margin: 30px;
             padding: 5px;
             font-family: 'Poppins', sans-serif;
         }
 
-        .about1 h1{
+        .about1 h1 {
             text-align: center;
             color: white;
             font-weight: bold;
         }
 
-        .about1 p{
+        .about1 p {
             text-align: center;
             padding: 3px;
             color: white;
         }
 
-        .about-card{
+        .about-card {
             margin-bottom: 20px;
             margin-top: 20px;
             margin-left: 100px;
@@ -226,17 +49,17 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .about-card i{
+        .about-card i {
             font-size: 43px;
             margin: 0;
         }
 
-        .about-card h3{
+        .about-card h3 {
             font-size: 25px;
             margin-bottom: 10px;
         }
 
-        .about-card hr{
+        .about-card hr {
             width: 46px;
             height: 3px;
             background-color: orange;
@@ -244,47 +67,92 @@
             border: none;
         }
 
-        .about-card p{
+        .about-card p {
             margin-top: 20px;
         }
 
-        .about-card:hover{
+        .about-card:hover {
             background-color: orange;
         }
 
-        .about-card:hover i, .about-card:hover h3, .about-card:hover p, .about-card:hover hr{
+        .about-card:hover i,
+        .about-card:hover h3,
+        .about-card:hover p,
+        .about-card:hover hr {
             color: white;
         }
 
-        .about-card:hover i{
+        .about-card:hover i {
             transform: translateY(-20px);
         }
 
-        .about-card:hover i, .about-card:hover h3, .about-card:hover hr{
+        .about-card:hover i,
+        .about-card:hover h3,
+        .about-card:hover hr {
             transition: all 400ms ease-in-out;
         }
 
-        footer{
+        footer {
             background-color: orange;
             padding: 20px;
             font-family: 'Poppins', sans-serif;
         }
 
-        footer p{
+        footer p {
             color: white;
             text-align: center;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <title>About Us</title>
 </head>
 
 <body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="logo_navbar">
+            <!-- logo -->
+            <a class="logo" href="#">
+                <!-- <img src="#" width="30" height="24"> -->
+            </a>
+        </div>
+        <!-- navigation text -->
+        <div class="centernavbar">
+            <ul class="centerlinks">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Group Members <i class="fa-solid fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Ahmad Irfan</a>
+                            <a href="faris.html">Faris Faisal</a>
+                            <a href="greg.html">Greg Ericson</a>
+                            <a href="husni.html">Zulhusni</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Our Projects <i class="fa-solid fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Project 1</a>
+                            <a href="#">Project 2</a>
+                            <a href="#">Project n+1</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <section class="about">
         <div class="about1">
             <h1>ABOUT US</h1>
-            <p>Group 007 is a group which comprises of 4 Universiti Teknologi Malaysia students from Bachelor's Degree of Computer Science (Software Engineering).</p>
+            <p>Group 007 is a group which comprises of 4 Universiti Teknologi Malaysia students from Bachelor's Degree
+                of Computer Science (Software Engineering).</p>
         </div>
         <div class="about2">
             <div>
@@ -316,7 +184,8 @@
                                 <h3>SKILLS</h3>
                                 <hr>
                                 <p>
-                                    Our group has various skills including applying HTML, CSS, Javascript, Bootstrap, Tailwind CSS and much more.
+                                    Our group has various skills including applying HTML, CSS, Javascript, Bootstrap,
+                                    Tailwind CSS and much more.
                                 </p>
                             </div>
                         </div>
@@ -325,9 +194,16 @@
             </div>
         </div>
     </section>
+
     <footer>
         <p>Copyright &copy; 2022 All rights reserved by Group 007</p>
     </footer>
+
+    <div class="footer">
+        <a href="https://github.com/group-7-webtech/project">
+            <img src="img/GitHub-Emblem.png" height="90px" alt="GitHub-logo" align="right">
+        </a>
+    </div>
 </body>
 
 </html>
