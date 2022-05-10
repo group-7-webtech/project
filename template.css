@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+body {
+    background-image: url("img/bg-vase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 100vh;
+    position: relative;
+
+  }
+
+.wholegrid{
+  display: grid;
+  grid-template-rows: 80vh 20vh;
+  grid-template-columns: 25% 70% 5%;
+}
+p{
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+/*untuk grid kiri ----------------------------------------------------------*/
+.grid-kiri{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-template-rows: 10vh 50vh 20vh 20vh;
+  grid-template-columns: 50% 50%;
+  padding-left: 100px;
+  background: rgb(255,0,0);
+  background: linear-gradient(68deg, rgba(255,0,0,0.7539216370141807) 0%, rgba(103,4,56,0.891176538974965) 69%);  
+
+}
+
+.shortfilm
+{
+  padding-right: 60px;
+  padding-top: 50px;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.shortfilm h3{
+  color:aqua;
+}
+.shortfilm hr { 
+  margin-top:10px;
+  border: 5px solid lightpink;
+}
+.spectral {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  z-index: 2;
+}
+.spectral h2{
+  /*writing-mode: vertical-lr;
+  text-orientation: mixed;*/
+  transform: rotate(-90deg);
+  font-size: 9em;
+  font-weight: 300;
+  color: rgb(255, 118, 118);
+  display: flex;
+  position: absolute;
+  top:400px;
+  margin-left:-220px;
+  opacity: 0.3;
+}
+.tajuk{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  padding-top: 30px;
+  
+}
+.tajuk h1{
+  font-size: 7em;
+  font-weight: 500;
+  color: lightpink;
+}
+.brief{
+  color: white;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  z-index: 4;
+  padding-top: 10px;
+  margin-right: 60px;
+}
+.brief h3{
+  color:aqua;
+}
+.discover{
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+.discover button{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: white;
+  border:1px solid white;
+  padding: 15px 40px 15px 40px;
+  border-radius: 18px;
+  position: relative;
+  left:150px;
+  top:50px;
+}
+ 
+/* ------------------------------------------------------------------------*/
+
+
+/*untuk grid tengah  ----------------------------------------------------------*/
+.grid-tengah{
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-right: 1px solid white;
+  grid-template-columns: 70% 30%;
+}
+
+.director{
+  grid-column:2/3 ;
+  color: white;
+  padding-right: 100px;
+  padding-top: 120px;
+  padding-left: 40px;
+}
+.director img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.trailer button{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: white;
+  border:1px solid white;
+  padding: 15px 40px 15px 40px;
+  border-radius: 18px;
+  position: relative;
+  right: 80px;
+  top:130px;
+}
+.director hr { 
+  margin-top:10px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  width: 40%;
+}
+/* ------------------------------------------------------------------------*/
+
+
+/*untuk grid bawah ----------------------------------------------------------*/
+.grid-bawah{
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  grid-template-columns: 35% 30% 30% 5%;
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,0.3925770991990546) 0%, rgba(0,0,0,0.3001401244091386) 100%); 
+}
+
+.photography
+{
+  grid-column: 1/2;
+  color: white;
+  padding-top: 20px;
+  padding-left: 120px;
+  padding-right: 100px;
+}
+.photography h3{
+  color:aqua;
+}
+.sound
+{ 
+  grid-column: 2/3;
+  color: white;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 100px;
+}
+.sound h3{
+  color:aqua;
+}
+.graphics
+{
+  grid-column: 3/4;
+  color: white;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 100px;
+}
+.graphics h3{
+  color:aqua;
+}
+.panah-kananbawah{
+  grid-column: 4/5;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+/* ------------------------------------------------------------------------*/
+
+/*untuk grid kanan ---------------------------------------------------------*/
+.grid-kanan{
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  text-align: center;
+  grid-template-rows: 10vh 70vh 10vh 10vh;
+
+}
+
+.bar
+{
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,0.3925770991990546) 0%, rgba(255,255,255,0.38977597875087533) 69%); 
+}
+.panah-kanan
+{
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,0.3925770991990546) 0%, rgba(255,255,255,0.38977597875087533) 69%); 
+}
+.panah-kiri
+{
+  grid-row: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,0.21330539051558128) 0%, rgba(255,255,255,0.19089642693014708) 69%); 
+}
+
+
+
+.fa-arrow-left
+{
+  grid-row: 5/6;
+  color: white;
+  
+}
+.fa-arrow-right
+{
+  grid-row: 4/5;
+  color: white;
+  opacity: 1;
+}
+.fa-bars
+{
+  grid-row: 1/2;
+  color: white;
+}
+/* ------------------------------------------------------------------------*/
