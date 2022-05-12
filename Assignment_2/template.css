@@ -285,19 +285,15 @@ p{
 
 .fa-arrow-left
 {
-  grid-row: 5/6;
   color: white;
   
 }
 .fa-arrow-right
 {
-  grid-row: 4/5;
   color: white;
-  opacity: 1;
 }
 .fa-bars
 {
-  grid-row: 1/2;
   color: white;
 }
 /* ------------------------------------------------------------------------*/
